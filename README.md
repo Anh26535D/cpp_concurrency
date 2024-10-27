@@ -1,3 +1,1 @@
-## Possible errors
-1. 'thread' is not a member of 'std'
-   g++ -pthread learn_thread.cpp -o learn_thread
+# This repository based on Udemy course Modern C++ Concurrency in Depth ( C++17/20)
