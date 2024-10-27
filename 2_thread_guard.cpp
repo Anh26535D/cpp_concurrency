@@ -24,6 +24,7 @@ int main() {
         std::cout << "Hello from lambda" << std::endl;
         std::cout << std::this_thread::get_id() << std::endl;
     });
+    // if we don't use thread_guard, then the program will crash as the main thread will exit before the lambda thread.
     thread_guard guard1(thread1);
 
     try {
