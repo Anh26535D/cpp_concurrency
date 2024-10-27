@@ -21,6 +21,9 @@ int main() {
     // A thread is joinable if it is not joined or detached
     // A thread is not joinable if it is joined or detached
     // If we don't join or detach a thread, the program will terminate when the thread goes out of scope
+    // We can call detach() function as soon as we launch a thread, as detach call does not block the calling thread
+    // In some occasions, we cannot call join function as soon as we launch a thread, as join call block the calling thread
+    
     std::thread thread1(foo);
     if (thread1.joinable()) {
         std::cout << "Thread 1 is joinable" << std::endl;
