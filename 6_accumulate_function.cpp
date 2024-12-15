@@ -4,6 +4,7 @@
 #include <thread>
 #include <vector>
 #include <functional>
+#include <cstdlib>
 
 #define MIN_BLOCK_SIZE 1000
 
